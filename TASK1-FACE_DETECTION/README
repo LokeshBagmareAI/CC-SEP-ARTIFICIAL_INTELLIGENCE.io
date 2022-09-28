@@ -1,0 +1,33 @@
+Installation steps :
+
+Step #1: 
+Install Libraries:
+
+Firstly, I installed the required libraries, OpenCV, and NumPy. You can install it easily through:
+pip install opencv-python
+pip install opencv
+For installing NumPy in your system, use the same command as above and replace ‘opencv-python’ with ‘numpy’:
+pip install numpy
+
+Step #2: 
+Import Modules :
+import cv2
+import numpy as np
+
+
+Step #3: 
+Add Xml files :
+cascade_face = cv2.CascadeClassifier('C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml')
+
+
+Step #4: 
+Detect Faces:
+
+Now, you must configure your camera and connect it to your system.
+The camera should work properly to avoid any issues in face detection.
+Before our camera recognizes us, it first has to detect faces.
+We’ll use the Haar Cascade classifier for face detection. 
+It is primarily an object detection method where you train a cascade function through negative and positive images,
+after which it becomes able to detect objects in other photos.
+
+
