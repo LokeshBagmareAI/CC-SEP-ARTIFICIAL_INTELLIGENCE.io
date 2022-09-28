@@ -1,0 +1,52 @@
+Data Set Link - https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
+
+Installation Steps :
+
+Step #1: 
+Install Libraries:
+
+Firstly, I installed the required libraries, OpenCV, and NumPy. You can install it easily through:
+pip install opencv-python
+pip install opencv
+For installing NumPy in your system, use the same command as above and replace ‘opencv-python’ with ‘numpy’:
+pip install numpy
+pip install tenesorflow2.0
+
+
+
+Step #2: 
+Import Modules :
+import cv2
+import numpy as np
+from keras.models import load_model
+from time import sleep
+from tensorflow.keras.utils import img_to_array
+from keras.preprocessing import image
+
+
+Step #3: 
+Add Xml files :
+cascade_face = cv2.CascadeClassifier('C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml')
+
+Add Classifier Model :
+classifier =load_model(r'E:\CODE CLAUSE\TASK2-EMOTION_DETECTION\model.h5')
+
+Step #4: 
+Detect Faces:
+
+Now, you must configure your camera and connect it to your system.
+The camera should work properly to avoid any issues in face detection.
+Before our camera recognizes us, it first has to detect faces.
+We’ll use the Haar Cascade classifier for face detection. 
+It is primarily an object detection method where you train a cascade function through negative and positive images,
+after which it becomes able to detect objects in other photos.
+
+
+Steo 05 :
+Detection Emotion :
+An image processing and classification method has been
+implemented in which face images are used to train a dualclassifier predictor that predicts the seven basic human
+emotions given a test image.
+The predictor is relatively successful at predicting
+test data from the same dataset used to train the classifiers.
+
